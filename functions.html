@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <script>
+		/*
+			Functions with Parameters
+			Functions without Parameters
+			Functions with default Parameters
+			Functions with Return statement
+			variable functions
+			named functions
+			Anonymos functions
+			Nested functions
+		*/
+		
+		/*
+			Functions without Parameters
+		*/
+		
+		let a=2
+		function Add(){
+				var addition=a+a;
+					document.write('Functions without parameters <br/>');
+					document.write("Addtition of a is : "+ addition +'<br/>');
+		}
+		Add();
+		
+		/*
+			Functions with Parameters
+		*/
+		
+		function Addition(a,b){
+				var addition=a+b;
+					document.write('Functions with parameters <br/>');
+					document.write("Addtition of a and b is : "+ addition +'<br/>');
+		}
+		Addition(10,20);
+		Addition(10,30);
+		
+		/*
+			Functions with Return Statement
+		*/
+		
+		function Multiplication(a,b){
+				return mul=a*b;
+					
+		}
+		document.write('Functions with Return Statement <br/>');
+		document.write("Multiplication of a and b is : "+ Multiplication(10,2)+'<br/>');
+		
+		
+		/*
+			variable Functions
+		*/
+		
+		var variablefun = function Multiplication(a,b){
+				return mul=a*b;
+					
+		}
+		document.write(' Variable Functions <br/>');
+		document.write("Multiplication of a and b is : "+ variablefun(15,3)+'<br/>');
+		
+		/*
+			Anonymos Functions
+		*/
+		
+		var variablefun = function(a,b){
+				return mul=a+b;
+					
+		}
+		document.write(' Anonymos Functions <br/>');
+		document.write("Addition of a and b is : "+ variablefun(15,3)+'<br/>');
+		
+		/*
+			Functions with default parameters
+		*/
+		
+		var variablefun = function(a,b=12){
+				return mul=a+b;
+					
+		}
+		document.write('Functions with default parameters<br/>');
+		document.write("Addition of a and b is : "+ variablefun(15)+'<br/>');
+		
+		/*
+			Nested Functions
+		*/
+		
+		function inner(x,y){
+			
+				return x+y;
+			}
+		function outer(){
+			let a=10;
+			
+			return a+inner();
+		}
+		
+		document.write('Nested function<br/>');
+		
+		document.write("Addition of x and y is : "+ outer(inner(10,15))+'<br/>');
+    </script>
+</body>
+</html>
