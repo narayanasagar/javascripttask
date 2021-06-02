@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #div1 {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        
+        #div2 {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="div1">
+        <button id="btn1">Button 1 hide</button>
+        <button id="btn2">Button 1 show</button>
+        <h1 id="heading1">Heading 1</h1>
+        <p id="p1"> Paragraph of heading 1 Paragraph of heading 1 Paragraph of heading 1Paragraph of heading 1 Paragraph of heading 1 Paragraph of heading 1 Paragraph of heading 1 Paragraph of heading 1
+        </p>
+    </div>
+    <br><br>
+    <div id="div2">
+        <button id="btn3">Button 2 hide</button>
+        <button id="btn4">Button 2 show</button>
+        <h1 id="heading2">Heading 2</h1>
+        <p id="p2">Paragraph of heading 2 Paragraph of heading 2 Paragraph of heading 2 Paragraph of heading 2 Paragraph of heading 2 Paragraph of heading 2 Paragraph of heading 2
+        </p>
+    </div>
+
+    <script>
+        $('#heading1').click(function() {
+            $('#p1').toggle();
+        })
+        $('#heading2').click(function() {
+            $('#p2').toggle();
+        })
+        $('#btn1').click(function() {
+            $('#div2').hide();
+        })
+        $('#btn2').click(function() {
+            $('#div2').show();
+        })
+        $('#btn3').click(function() {
+            $('#div1').hide();
+        })
+        $('#btn4').click(function() {
+            $('#div1').show();
+        })
+    </script>
+</body>
+
+</html>
